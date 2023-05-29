@@ -23,7 +23,8 @@ def home():
 from http import client
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
-import requests
+
+import requests 
 from bs4 import BeautifulSoup
 
 client = MongoClient('mongodb://test:test@ac-oowgeoe-shard-00-00.twt800w.mongodb.net:27017,ac-oowgeoe-shard-00-01.twt800w.mongodb.net:27017,ac-oowgeoe-shard-00-02.twt800w.mongodb.net:27017/?ssl=true&replicaSet=atlas-5kccjl-shard-0&authSource=admin&retryWrites=true&w=majority')
